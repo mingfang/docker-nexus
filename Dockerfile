@@ -28,7 +28,7 @@ RUN mv node* node && \
     ln -s /node/bin/npm /usr/local/bin/npm
 ENV NODE_PATH /usr/local/lib/node_modules
 
-RUN wget -O - http://download.sonatype.com/nexus/oss/nexus-2.11.2-03-bundle.tar.gz | tar zx
+RUN wget -O - http://download.sonatype.com/nexus/oss/nexus-3.0.0-m5-bundle.tar.gz | tar zx
 RUN mv nexus* nexus
 
 #Add runit services
