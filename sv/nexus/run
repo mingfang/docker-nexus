@@ -7,4 +7,4 @@ env
 
 cd /nexus/bin
 exec 2>&1
-exec ./nexus console
+exec ./nexus run
