@@ -25,7 +25,7 @@ RUN add-apt-repository ppa:webupd8team/java -y && \
     rm -r /var/cache/oracle-jdk8-installer
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
-RUN wget -O - https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-3.10.0-04-unix.tar.gz | tar zx
+RUN wget -O - https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-3.11.0-01-unix.tar.gz | tar zx
 RUN mv nexus* nexus
 
 #Add runit services
